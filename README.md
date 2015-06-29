@@ -5,9 +5,9 @@ We have not implemented a native version of TextInputDialog for WinRT since it i
 
 To implement TextInputDialog in your Gideros project and ensure it will also work in WinRT, add these Lua files and resources to your project then add the following lines at the beginning of your Lua code:
 
+<pre>
 local os = application:getDeviceInfo()
 
-<pre>
 -- If the OS is WinRT then use lua class TextInputDialog2 as TextInputDialog
 if os == "WinRT" then
   TextInputDialog=TextInputDialog2
