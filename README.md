@@ -14,4 +14,13 @@ if os == "WinRT" then
 end
 </pre>
 
-After this, the rest of the Lua code remains the same and TextInputDialogs will appear in WinRT as well as other operating systems. For Windows Phone, a soft keyboard will pop up (drawn manually by Lua). On Windows Store, it will use the physical keyboard. Currently only numbers, letters and spaces are implemented for the physical keyboard. An attempt has been made to match the appearance of Windows Metro style.
+After this, the rest of the Lua code remains the same and TextInputDialogs will operate correctly in all operating systems. For Windows Phone, a soft keyboard will pop up (drawn manually by Lua). On Windows Store, it will use the physical keyboard. Currently only numbers, letters and spaces are implemented for the physical keyboard. An attempt has been made to match the appearance of Windows Metro style.
+
+See main.lua for and example of how to use this library.
+
+# Acknowledgement
+
+I have used the InputKeyboard class, kindly provided by Mathz Franz:
+
+https://github.com/mathz/InputKeyboard
+
